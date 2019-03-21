@@ -1,5 +1,5 @@
 import React from 'react'
-import 'UserProfile.scss'
+import './UserProfile.scss'
 
 
 export default class UserProfile extends React.Component{

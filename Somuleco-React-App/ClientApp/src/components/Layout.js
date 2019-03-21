@@ -6,7 +6,6 @@ import AuthenticatedSideNav from './Authenticated/AuthenticatedSideNav/Authentic
 export default props => (
   <div>
     <NavMenu />
-    <AuthenticatedSideNav/>
     <Container>
       {props.children}
     </Container>

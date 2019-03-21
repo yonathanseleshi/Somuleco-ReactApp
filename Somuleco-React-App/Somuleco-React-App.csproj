@@ -26,6 +26,7 @@
         <Content Include="ClientApp\src\components\Unauthenticated\Login\Login.scss" />
         <Content Include="ClientApp\src\components\Unauthenticated\Registration\Register.js" />
         <Content Include="ClientApp\src\components\Unauthenticated\Registration\Register.scss" />
+        <Content Include="ClientApp\src\store\AuthenticatedUser.js" />
         <None Remove="$(SpaRoot)**" />
         <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
     </ItemGroup>
