@@ -20,19 +20,22 @@
         <Content Remove="$(SpaRoot)**" />
         <Content Include="ClientApp\src\components\Authenticated\AuthenticatedSideNav\AuthenticatedSideNav.js" />
         <Content Include="ClientApp\src\components\Authenticated\AuthenticatedSideNav\AuthenticatedSideNav.scss" />
+        <Content Include="ClientApp\src\components\Authenticated\Lessons.js" />
         <Content Include="ClientApp\src\components\Profile\UserProfile.js" />
         <Content Include="ClientApp\src\components\Profile\UserProfile.scss" />
         <Content Include="ClientApp\src\components\Unauthenticated\Login\Login.js" />
         <Content Include="ClientApp\src\components\Unauthenticated\Login\Login.scss" />
         <Content Include="ClientApp\src\components\Unauthenticated\Registration\Register.js" />
         <Content Include="ClientApp\src\components\Unauthenticated\Registration\Register.scss" />
+        <Content Include="ClientApp\src\pages\unauthenticated\Registration.js" />
         <Content Include="ClientApp\src\store\AuthenticatedUser.js" />
         <None Remove="$(SpaRoot)**" />
         <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="ClientApp\src\components\Authenticated" />
+      <Folder Include="ClientApp\src\assets\icons" />
+      <Folder Include="ClientApp\src\pages\authenticated" />
     </ItemGroup>
 
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

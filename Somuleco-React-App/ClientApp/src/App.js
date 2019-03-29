@@ -7,6 +7,8 @@ import FetchData from './components/FetchData';
 import Register from "./components/Unauthenticated/Registration/Register";
 import Login from "./components/Unauthenticated/Login/Login";
 import UserProfile from "./components/Profile/UserProfile";
+import Lessons from "./components/Authenticated/Lessons"
+import Registration from "./pages/unauthenticated/Registration"
 
 
 
@@ -17,7 +19,9 @@ export default () => (
     <Route exact path="/" component={Home} />
       
     <Route path="/register" exact component={Register} />
+    <Route path="/lessons" exact component={Lessons}/>
     <Route path="/login" exact component={Login} />
+    <Route path="/register" exact component={Registration}/>
     <Route path="/:username" component={UserProfile} />
       </Switch>
 

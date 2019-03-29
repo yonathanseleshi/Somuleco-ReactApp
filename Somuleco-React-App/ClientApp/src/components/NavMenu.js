@@ -20,11 +20,17 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+
 import Button from "@material-ui/core/Button";
 import InputBase from "@material-ui/core/InputBase";
 import SearchIcon from '@material-ui/icons/Search';
+
+import LearningFeed from '../assets/icons/LearningFeed.svg';
+import Community from '../assets/icons/community.svg';
+import Library from '../assets/icons/Library.svg';
+import Wallet from '../assets/icons/wallet.svg';
+import LearningProfile from '../assets/icons/LearningProfile.svg';
+import blue from "@material-ui/core/es/colors/blue";
 
 
 
@@ -245,6 +251,8 @@ class NavMenu extends React.Component {
               }}
               open={this.state.open}
           >
+            
+            
             <div className={classes.toolbar}>
               <IconButton onClick={this.handleDrawerClose}>
                 {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
@@ -252,22 +260,48 @@ class NavMenu extends React.Component {
             </div>
             <Divider />
             <List>
-              {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                  <ListItem button key={text}>
-                    <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                    <ListItemText primary={text} />
-                  </ListItem>
-              ))}
+
+              <Link to="/lessons">
+              <ListItem button>
+                <ListItemIcon color={blue}><img src={LearningFeed} height={45} width={45}/></ListItemIcon>
+                <ListItemText primary="Learning Feed" />
+              </ListItem>
+              </Link>
+
+
+              
+              <ListItem button>
+                <ListItemIcon color={blue}><img src={Community} height={45} width={45}/></ListItemIcon>
+                <ListItemText primary="Social Feed" />
+              </ListItem>
+
+
+              <ListItem button>
+                <ListItemIcon color={blue}><img src={Library} height={45} width={45}/></ListItemIcon>
+                <ListItemText primary="Library" />
+              </ListItem>
+
+
+              <ListItem button>
+                <ListItemIcon color={blue}><img src={Wallet} height={45} width={45}/></ListItemIcon>
+                <ListItemText primary="Wallet" />
+              </ListItem>
+
+
+              <ListItem button>
+                <ListItemIcon color={blue}><img src={LearningProfile} height={45} width={45}/></ListItemIcon>
+                <ListItemText primary="Learning Profile" />
+              </ListItem>
+
+
+
+
             </List>
             <Divider />
             
             <List>
-              {['All mail', 'Trash', 'Spam'].map((text, index) => (
-                  <ListItem button key={text}>
-                    <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                    <ListItemText primary={text} />
-                  </ListItem>
-              ))}
+            
+              
               
             </List>
           </Drawer>
