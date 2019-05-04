@@ -21,13 +21,44 @@
         <Content Include="ClientApp\src\components\Authenticated\AuthenticatedSideNav\AuthenticatedSideNav.js" />
         <Content Include="ClientApp\src\components\Authenticated\AuthenticatedSideNav\AuthenticatedSideNav.scss" />
         <Content Include="ClientApp\src\components\Authenticated\Lessons.js" />
+        <Content Include="ClientApp\src\components\Comment\Comment.js" />
         <Content Include="ClientApp\src\components\Profile\UserProfile.js" />
         <Content Include="ClientApp\src\components\Profile\UserProfile.scss" />
         <Content Include="ClientApp\src\components\Unauthenticated\Login\Login.js" />
         <Content Include="ClientApp\src\components\Unauthenticated\Login\Login.scss" />
         <Content Include="ClientApp\src\components\Unauthenticated\Registration\Register.js" />
         <Content Include="ClientApp\src\components\Unauthenticated\Registration\Register.scss" />
-        <Content Include="ClientApp\src\pages\unauthenticated\Registration.js" />
+        <Content Include="ClientApp\src\pages\authenticated\AuthenticatedLibrary\AuthenticatedLibrary.js" />
+        <Content Include="ClientApp\src\pages\authenticated\AuthenticatedLibrary\AuthenticatedLibrary.module.scss" />
+        <Content Include="ClientApp\src\pages\authenticated\Cart\Cart.js" />
+        <Content Include="ClientApp\src\pages\authenticated\Cart\Cart.module.scss" />
+        <Content Include="ClientApp\src\pages\authenticated\Chat\Chat.js" />
+        <Content Include="ClientApp\src\pages\authenticated\Chat\Chat.module.scss" />
+        <Content Include="ClientApp\src\pages\authenticated\LearningPostsFeed\LearningPostsFeed.js" />
+        <Content Include="ClientApp\src\pages\authenticated\LearningPostsFeed\LearningPostsFeed.module.scss" />
+        <Content Include="ClientApp\src\pages\authenticated\LearningProfile\LearningProfile.js" />
+        <Content Include="ClientApp\src\pages\authenticated\Notifications\Notifications.js" />
+        <Content Include="ClientApp\src\pages\authenticated\Notifications\Notifications.module.scss" />
+        <Content Include="ClientApp\src\pages\authenticated\SocialPostsFeed\SocialPostsFeed.js" />
+        <Content Include="ClientApp\src\pages\authenticated\SocialPostsFeed\SocialPostsFeed.module.scss" />
+        <Content Include="ClientApp\src\pages\authenticated\Wallet\Wallet.js" />
+        <Content Include="ClientApp\src\pages\authenticated\Wallet\Wallet.module.scss" />
+        <Content Include="ClientApp\src\pages\unauthenticated\Course\Course.js" />
+        <Content Include="ClientApp\src\pages\unauthenticated\Course\Course.module.scss" />
+        <Content Include="ClientApp\src\pages\unauthenticated\Explore\Explore.js" />
+        <Content Include="ClientApp\src\pages\unauthenticated\Explore\Explore.module.scss" />
+        <Content Include="ClientApp\src\pages\unauthenticated\Login\Login.js" />
+        <Content Include="ClientApp\src\pages\unauthenticated\Login\Login.module.scss" />
+        <Content Include="ClientApp\src\pages\unauthenticated\Profile\Profile.js" />
+        <Content Include="ClientApp\src\pages\unauthenticated\Profile\Profile.module.scss" />
+        <Content Include="ClientApp\src\pages\unauthenticated\Registration\Registration.js" />
+        <Content Include="ClientApp\src\pages\unauthenticated\Registration\Registration.module.scss" />
+        <Content Include="ClientApp\src\pages\unauthenticated\School\School.js" />
+        <Content Include="ClientApp\src\pages\unauthenticated\School\School.module.scss" />
+        <Content Include="ClientApp\src\pages\unauthenticated\UnauthenticatedLibrary\UnauthenticatedLibrary.js" />
+        <Content Include="ClientApp\src\pages\unauthenticated\UnauthenticatedLibrary\UnauthenticatedLibrary.module.scss" />
+        <Content Include="ClientApp\src\pages\unauthenticated\Welcome\Welcome.js" />
+        <Content Include="ClientApp\src\pages\unauthenticated\Welcome\Welcome.module.scss" />
         <Content Include="ClientApp\src\store\AuthenticatedUser.js" />
         <None Remove="$(SpaRoot)**" />
         <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
@@ -35,7 +66,11 @@
 
     <ItemGroup>
       <Folder Include="ClientApp\src\assets\icons" />
-      <Folder Include="ClientApp\src\pages\authenticated" />
+      <Folder Include="ClientApp\src\components\Authenticated\AuthenticatedNavBar" />
+      <Folder Include="ClientApp\src\components\LessonPost" />
+      <Folder Include="ClientApp\src\components\Notification" />
+      <Folder Include="ClientApp\src\components\SocialPost" />
+      <Folder Include="ClientApp\src\components\Unauthenticated\UnauthenticatedNavBar" />
     </ItemGroup>
 
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
