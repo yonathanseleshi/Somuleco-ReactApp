@@ -1,7 +1,7 @@
 import React from 'react';
 import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import './NavMenu.scss';
+import NavStyles from './NavMenu.module.scss';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
